@@ -1,2 +1,2 @@
-export {default as ActivityIndicatorComponent} from './activityIndicatorComponent';
-export {default as DropdownAlertComponent} from './dropdownAlertComponent';
+export {default as CustomActivityIndicator} from './customActivityIndicator';
+export {default as CustomDropdownAlert} from './customDropdownAlert';
