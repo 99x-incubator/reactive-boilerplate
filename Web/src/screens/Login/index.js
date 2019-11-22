@@ -38,8 +38,6 @@ class Login extends React.Component {
         }
         this.onLogin = this.onLogin.bind(this);
         this.test = this.test.bind(this);
-      
-    
     }
 
      async componentDidUpdate(){
@@ -52,8 +50,7 @@ class Login extends React.Component {
             if(this.state.processing && this.props.error){
                 this.setState({processing:false});
                 console.log(this.props.errorMessage);
-                this.alertHelper.handler(error, 'Username or Password is incorrect')
-
+                this.alertHelper.handler(error, 'Username or Password is incorrect');
             }
     }
 
@@ -156,7 +153,6 @@ class Login extends React.Component {
                 </Card>
             </div> 
         )}
-        
 };
 
 
@@ -167,7 +163,7 @@ class Login extends React.Component {
         error: state.auth? state.auth.error: false,
         errorMessage: state.auth? state.auth.errorMessage:'',
         loading: state.auth? state.auth.loading:null,
-        isAuthenticated:state.auth? state.auth.isAuthenticated:null,
+        isAuthenticated:state.auth? state.auth.isAuthenticated:null
     }
   }
 

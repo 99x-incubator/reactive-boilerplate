@@ -1,7 +1,7 @@
 import React  from 'react';
-import { AlertHelper } from '../../helpers/commonHelper'
-import {success} from '../../helpers/commonHelper'
-import {Card} from '../../helpers/uiHelper'
+import { AlertHelper } from '../../helpers/commonHelper';
+import {success} from '../../helpers/commonHelper';
+import {Card} from '../../helpers/uiHelper';
 
 export default class Home extends React.Component {
 
@@ -23,5 +23,4 @@ export default class Home extends React.Component {
             </div>
         )
     }
-    
 }
