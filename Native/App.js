@@ -8,14 +8,12 @@ import { Store} from './app/helpers/commonHelper';
 import { CustomDropdownAlert } from './app/components';
 import { Provider } from 'react-redux';
 import AppContainer from './app/router';
-import Config from "react-native-config";
 import StorybookUI from './storybook';
-import dotenvParseVariables from 'dotenv-parse-variables';
+import config from './app/helpers/configHelper';
 
-const ENV = dotenvParseVariables({ IS_STORYBOOK: Config.IS_STORYBOOK });
 export default class Home extends React.Component {
   render(){
-    if (!ENV.IS_STORYBOOK) {
+    if (config.isStorybook !== 'true') {
     return (
       <Provider store={Store}>
         <View style={styles.container}>
