@@ -14,6 +14,7 @@ import {
 import I18n from '../../i18n';
 import { connect } from 'react-redux';
 import {Routes} from '../../../app/router';
+import { CustomActivityIndicator } from '../../../app/components';
 
 class Login extends React.Component {
 
@@ -99,6 +100,7 @@ class Login extends React.Component {
     render(){
         return(
             <View style={styles.container}> 
+            <CustomActivityIndicator loading={this.props.loading}/>
                 <View style={styles.titleContainer}>
                     <Text >
                         Welcome 
