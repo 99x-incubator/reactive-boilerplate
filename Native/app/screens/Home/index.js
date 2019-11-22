@@ -9,9 +9,10 @@ import {
   AlertHelper,
     success,
 } from '../../helpers/commonHelper';
+import { connect } from 'react-redux';
 
 
- export default class Home extends React.Component {
+class Home extends React.Component {
 
     constructor(props){
         super(props);
@@ -25,6 +26,7 @@ import {
     render(){
         return(
         <View>
+            <CustomActivityIndicator loading={this.props.loading}/>
             <View style={styles.container}> 
                 <View style={styles.titleContainer}>
                     <Text >
@@ -53,6 +55,16 @@ titleContainer:{
     paddingBottom:10,
 }
 });
+
+const mapStateToProps = (state) => {
+    return {
+        loading: state.auth? state.auth.loading:null,
+    }
+  }
+
+export default connect(
+  mapStateToProps
+)(Home)
 
 
 

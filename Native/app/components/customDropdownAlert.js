@@ -1,11 +1,11 @@
 import  DropdownAlert  from 'react-native-dropdownalert';
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
-import  { AlertHelper }  from '../../app/helpers/commonHelper';
-import { success, warn, info, error } from '../../app/helpers/commonHelper';
+import  { AlertHelper }  from '../helpers/commonHelper';
+import { success, warn, info, error } from '../helpers/commonHelper';
 
 
-export default class DropdownAlertComponent extends PureComponent {
+export default class CustomDropdownAlert extends PureComponent {
 
     constructor(props){
         super(props)

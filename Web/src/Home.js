@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -7,11 +8,10 @@ function App() {
       <header className="App-header">
       </header>
       <body>
-          Login
+          Home
       </body>
     </div>
   );
 }
 
 export default App;
-

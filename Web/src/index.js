@@ -1,12 +1,24 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Router from './Routing'
+import ActivityIndicator from './components/activityIndicator'
+import { Provider } from 'react-redux';
+import {Store} from 'reactive-boilerplate-common'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter} from 'react-router-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import dotenv from 'dotenv'
+dotenv.config()
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <Provider store={Store}>
+      <BrowserRouter>
+       <Suspense fallback="loading..."><Router/></Suspense>
+       <ActivityIndicator/>
+       </BrowserRouter>
+     </Provider>
+
+, document.getElementById('root'));
+
+
