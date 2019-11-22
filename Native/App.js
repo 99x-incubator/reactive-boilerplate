@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 import { Store} from './app/helpers/commonHelper';
-import { CustomActivityIndicator, CustomDropdownAlert } from './app/components';
+import { CustomDropdownAlert } from './app/components';
 import { Provider } from 'react-redux';
 import AppContainer from './app/router';
 import Config from "react-native-config";

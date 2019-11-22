@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './Routing'
-import ActivityIndicatorComponent from '../src/components/activityIndicatorComponent'
+import ActivityIndicator from './components/activityIndicator'
 import { Provider } from 'react-redux';
 import {Store} from 'reactive-boilerplate-common'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,7 @@ ReactDOM.render(
     <Provider store={Store}>
       <BrowserRouter>
        <Suspense fallback="loading..."><Router/></Suspense>
-       <ActivityIndicatorComponent/>
+       <ActivityIndicator/>
        </BrowserRouter>
      </Provider>
 

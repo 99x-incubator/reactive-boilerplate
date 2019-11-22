@@ -4,7 +4,7 @@ import 'react-activity/dist/react-activity.css';
 import { connect } from 'react-redux';
 
  
-export class ActivityIndicatorComponent extends Component {
+export class ActivityIndicator extends Component {
 
   constructor(props){
     super(props);
@@ -25,5 +25,5 @@ const mapStateToProps = (state /*, ownProps*/) => {
   }
 }
 
-export default connect(mapStateToProps)(ActivityIndicatorComponent);
+export default connect(mapStateToProps)(ActivityIndicator);
 
