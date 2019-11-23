@@ -70,7 +70,7 @@ static instance;
     } 
 
     static getUrl = (url) => {
-        getConfig().baseUrl+url;    
+        return getConfig().baseUrl+url;    
     }    
 }
 
