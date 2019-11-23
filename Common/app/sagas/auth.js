@@ -8,9 +8,12 @@ function* login(action){
         const response = yield call(authHelper.loginRequest,action.action)
         if(response && !response.error && response.token && response.username){        
             var storageHelper = StorageHelper.getInstance();
+
             yield call(storageHelper.store, response.username, response.token);
+
             //test code to retrive credentials
-            var credentials = yield calls(storageHelper.get);
+            var credentials = yield call(storageHelper.get);
+            console.log(credentials);
 
             yield put({type:LOGIN_RESPONSE,action:{login:response}});
         }else{
