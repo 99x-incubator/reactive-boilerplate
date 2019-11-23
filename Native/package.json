@@ -23,7 +23,6 @@
     "dotenv-parse-variables": "^0.2.3",
     "react": "16.9.0",
     "react-native": "0.61.4",
-    "react-native-config": "^0.11.7",
     "react-native-dropdownalert": "^4.2.0",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.5.0",
@@ -56,8 +55,9 @@
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-dom": "^16.9.0",
-    "react-test-renderer": "16.9.0",
-    "react-native-storybook-loader": "^1.8.0"
+    "react-native-dotenv": "^0.2.0",
+    "react-native-storybook-loader": "^1.8.0",
+    "react-test-renderer": "16.9.0"
   },
   "jest": {
     "preset": "react-native",

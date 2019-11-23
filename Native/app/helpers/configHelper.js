@@ -1,7 +1,8 @@
-import Config from "react-native-config";
+import {ENV, BASEURL, IS_STORYBOOK} from 'react-native-dotenv';
+
 const config = {
-    env:Config.ENV,
-    baseUrl:Config.BASEURL,
-    isStorybook: Config.IS_STORYBOOK
+    env:ENV,
+    baseUrl:BASEURL,
+    isStorybook: IS_STORYBOOK
 };
 export default config;

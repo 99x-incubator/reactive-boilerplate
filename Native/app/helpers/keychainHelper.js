@@ -2,9 +2,8 @@ import * as Keychain from 'react-native-keychain';
 
 export default class KeychainHelper {
 
-    storeCredentials = async (username,password) => {
-
-        return Keychain.setGenericPassword(username, password);
+    storeCredentials = async (username,token) => {
+        return Keychain.setGenericPassword(username, token);
     }
 
     getCredentials = async()=>{
@@ -13,7 +12,7 @@ export default class KeychainHelper {
             if (credentials) {
               return {
                 username: credentials.username,
-                password: credentials.password
+                token: credentials.password
                 };
             } else {
               return {error:true, error_msg: 'No credentials stored'};

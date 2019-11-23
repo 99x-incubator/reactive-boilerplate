@@ -25,16 +25,13 @@ class Home extends React.Component {
 
     render(){
         return(
-        <View>
-            <CustomActivityIndicator loading={this.props.loading}/>
             <View style={styles.container}> 
                 <View style={styles.titleContainer}>
-                    <Text >
-                        Welcome
+                    <Text style={styles.titleText}>
+                        Welcome to Reactive Boilerplate
                     </Text>
                 </View>
                 
-           </View>
            </View>
        
         )
@@ -43,16 +40,18 @@ class Home extends React.Component {
 };
 
 const styles = StyleSheet.create({
-container:{
+container: {
     flex:1,
     justifyContent:'center',
-    alignContent:'space-around',
-    paddingHorizontal: '5%'
+    alignContent:'center',
     
 },
-titleContainer:{
+titleContainer: {
     alignSelf:'center',
     paddingBottom:10,
+},
+titleText: {
+    fontSize:20
 }
 });
 
