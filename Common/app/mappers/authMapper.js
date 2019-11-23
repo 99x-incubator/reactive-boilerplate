@@ -10,7 +10,7 @@ export default class AuthMapper{
     static mapAppRequestLoginToApiRequestLogin= (appLoginRequestModal)=>{
         
         var apiModal= new apiLoginRequestModal();
-        apiModal.userName = appLoginRequestModal.username;
+        apiModal.username = appLoginRequestModal.username;
         apiModal.password= appLoginRequestModal.password;
         apiModal.rememberMe = appLoginRequestModal.rememberMe;
         this.password = appLoginRequestModal.password;
