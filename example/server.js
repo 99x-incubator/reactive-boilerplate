@@ -25,7 +25,7 @@ server.post("/login", (req, res) => {
 				expiresIn: '24h'
 			}
 		);
-		res.json({ success: true, message: 'Successfully logged in.', token: token, username: username });
+		res.json({ success: true, message: 'Successfully logged in.', token: token, username: data.username });
 	}
 	else {
 		res.json({ success: false, message: `Login failed for user ${data.username}.` });
