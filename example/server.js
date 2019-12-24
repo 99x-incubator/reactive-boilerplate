@@ -1,5 +1,10 @@
 const express = require('express');
+var cors = require('cors')
 const server = express();
+
+//enable cors for all origins
+server.use(cors());
+
 const body_parser = require('body-parser');
 
 let jwt = require('jsonwebtoken');
