@@ -98,12 +98,10 @@
     color: #EF3B3A;
   }
   .outerContainer{
-    position: center;
-    z-index: 1;
-    max-width: 800px;
-    padding: 80px ;
-    padding-left: 100px;
-    padding-right: 50px;
+    margin: auto;
+    width: 40%;
+    border: 3px solid rgb(40, 134, 197);
+    margin-top: 80px;
   }
   .buttonSubmit{
     width: 100%;
