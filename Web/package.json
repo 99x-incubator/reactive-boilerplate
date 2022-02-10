@@ -8,7 +8,7 @@
     "i18next": "^17.3.0",
     "i18next-browser-languagedetector": "^4.0.0",
     "local-storage": "^2.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-activity": "^1.2.2",
     "react-bootstrap": "^1.0.0-beta.14",
